@@ -15,7 +15,7 @@
 6-й день: 3,22
 Ответ: на шестой день спортсмен достиг результата — не менее 3 км. 
 #
-Task 6
+Task 6.
 '''
 first_result = float(input())
 last_result = float(input())
