@@ -30,15 +30,11 @@ while first_result > last_result:
         break
 
 # Расчет километража спортсмена.
-percent = first_result / 100 * 10
-print(percent)
-
-
-# while percent != last_result:
-#     percent /= 100 * 10 + first_result
-#     print(percent)
-#     days += 1
-#     if percent == last_result:
-#         print(f'На {days}-й день спортсмен достиг результата - не менее {int(last_result)} км.')
-#         break
+while first_result < last_result:
+    percent = first_result / 100 * 10 
+    first_result = first_result + percent
+    days += 1
+    if first_result >= last_result:
+        print(f'На {days}-й день спортсмен достиг результата - не менее {int(last_result)} км.')
+        break
 
