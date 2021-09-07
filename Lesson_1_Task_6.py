@@ -32,7 +32,7 @@ while first_result > last_result:
 # Расчет километража спортсмена.
 while first_result < last_result:
     percent = first_result / 100 * 10 
-    first_result = first_result + percent
+    first_result += percent
     days += 1
     if first_result >= last_result:
         print(f'На {days}-й день спортсмен достиг результата - не менее {int(last_result)} км.')
