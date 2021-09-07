@@ -3,8 +3,10 @@ Task 3.
 Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn. 
 Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
 '''
-
 num = int(input())
 
-num = num * 10 + num
-print(num)
+a = num * 10 + num
+b = num * 100 + a
+summ = num + a + b
+
+print(summ)
