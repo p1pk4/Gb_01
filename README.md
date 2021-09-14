@@ -7,5 +7,6 @@ ___
 Repo and branches:
 ___
 Lesson 1: https://github.com/p1pk4/Gb_01/tree/Lesson_1
+Lesson 2: https://github.com/p1pk4/Gb_01/tree/Lesson_2
 ___
 Преподаватель Александра Шаповалова
