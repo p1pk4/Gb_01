@@ -17,9 +17,9 @@ mlist = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
 
 
 
-temp = [] 
-s = [temp.append(x) for x in mlist if x not in temp]
-print(list(temp)) 
+new_list = [] 
+s = [new_list.append(x) for x in mlist if x not in new_list]
+print(list(new_list)) 
 
 # x = [elem[0] for elem in groupby(mlist)]
 # print(tuple(x))

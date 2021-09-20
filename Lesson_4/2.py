@@ -13,14 +13,15 @@ Task 2.
 '''
 
 a_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-
-
 out = [item for item in a_list]
-print(out)
 
-
-for item in range(1,len(out)):
+for item in range(1, len(out)):
     if out[item] > out[item - 1]: #range(1, len(a_list)) if a_list[item] > a_list[item - 1]]
         
         
+        
         print(out[item])
+
+
+b = [int(i) for i in range(1,len(a_list)) if a_list[i] > a_list[i - 1]]
+print(b)
