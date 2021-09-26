@@ -11,12 +11,15 @@ Four — 4
 Task 4.
 '''
 
-char = '-'
-my_list = ['Один', "Два ", "Три ", "Четыре "]
-# new_numbers = []
-with open('t4.txt') as f_obj4, open('t4_2.txt', 'w', encoding='utf-8') as f_obj4_w:
-    for line in f_obj4.readlines():
-        words, numbers = line.split("-")
+# char = '-'
+# my_list = ['Один', "Два ", "Три ", "Четыре "]
 
-    for el in my_list:
-        f_obj4_w.writelines(el + char + '\n')
+my_dict = {'One': 'Один',
+           'Two': 'Два',
+           'Three': 'Три',
+           'Four': 'Четыре'}
+
+with open('t4.txt') as file_t4, open('t4_2.txt', 'w', encoding='utf-8') as file_t4_write:
+    for line in file_t4.readlines():
+        words, numbers = line.rstrip().split(" - ")
+        file_t4_write.write(f'{my_dict[words]} - {numbers}\n')
