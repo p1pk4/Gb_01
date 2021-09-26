@@ -16,17 +16,19 @@ Task 6.
 import re
 my_dict = {}
 
+with open('t6.txt') as educations:
+    for line in educations:
+        lesson, *lessons_other = line.split()
+        lesson_hours = [int(i.rstrip('(л)(пр)(лаб)')) for i in lessons_other if i != '—']
+        my_dict.update({lesson.rstrip(':'): sum(lesson_hours)})
 
-with open('6.txt', 'r', encoding='utf-8') as educations:
-        
-
-    for line in educations.readlines():
-        names, hours = line.rstrip('\n').split(': ')
-        print(hours)
-
-
+print(my_dict)
 
 
-        # nums = re.findall(r'\d+', line)
-        # print(type(nums))
-        # print(list(nums))
+# with open('t6.txt', 'r', encoding='utf-8') as educations:
+#     for line in educations.readlines():
+#         names, hours = line.rstrip('\n').split(': ')
+#         print(hours)
+#         # nums = re.findall(r'\d+', line)
+#         # print(type(nums))
+#         # print(list(nums))
