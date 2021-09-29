@@ -9,7 +9,7 @@ class Matrix:
             print()
         return ''
 
-    '''2 варианта реализации __str__'''
+    '''2 варианта реализации __str__''''
 
     # def __str__(self):
     #     return '\n'.join(map(str, self.my_list))
