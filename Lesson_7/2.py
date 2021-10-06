@@ -14,43 +14,34 @@
 Task 2.
 '''
 
+from abc import ABC, abstractmethod
 
-class Clothes():
+class Clothes(ABC):
     """
     Общее количество одежды которое есть на производстве.
 
     """
-    def __init__(self, cloth):
-        self.cloth = cloth
+    def __init__(self, param):
+        self.param = param
 
-    def coat(self, v):
-        
-        result_coat = v / 6.5 + 0.5
-        return result_coat
-
-    def suit(self, h):
-
-        result_suit =  2 * h + 0.3
-        return result_suit
-
-# class Coat(Clothes):
-    
-#     # def __init__(self, v):
-#     #     self.v = v
-
-#     def rashod_palto(self):
-
-#         result = v / 6.5 + 0.5
-        
-#         return result
+    @abstractmethod
+    def calculate(self):
+        pass
 
 
-# class Suit(Clothes):
-    
-#     def rashod_suit(self):
-#         pass
+class Coat(Clothes):
 
-palto = Clothes
+    def calculate(self):
+        # formula
+        self.param / 6.5 + 0.5
+        return super().calculate()
 
 
+class Suit(Clothes):
 
+    def calculate(self):
+        # formula
+        return super().calculate()
+
+coat = Coat(100)
+coat.calculate()
