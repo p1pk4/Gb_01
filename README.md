@@ -17,5 +17,9 @@ Lesson 4: https://github.com/p1pk4/Gb_01/tree/Lesson_4
 Lesson 5: https://github.com/p1pk4/Gb_01/tree/Lesson_5
 
 Lesson 6: https://github.com/p1pk4/Gb_01/tree/Lesson_6
+
+Lesson 7: https://github.com/p1pk4/Gb_01/tree/Lesson_7
+
+Lesson 8: https://github.com/p1pk4/Gb_01/tree/Lesson_8
 ___
 Преподаватель Александра Шаповалова
